@@ -1,0 +1,415 @@
+/*
+	Project: Personal Website for Aneesh Bhatnagar
+	Author: Aneesh Bhatnagar
+	Website: www.aneeshbhatnagar.com
+	Github: www.github.com/AneeshBhatnagar
+	Colour Scheme: Light - #c3c2c2, Dark - #212121, Accent - #21a1cf
+*/
+
+/********************************************
+	Table of Contents
+	1. Common Properties
+	2. Homepage
+	3. Connect Page
+	4. Responsive Utilities
+********************************************/
+
+/*Common Properties 
+************************/
+
+body,html{
+	background: #c3c2c2;
+}
+
+#loader{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background:url(../images/spinner.gif) 50% 50% no-repeat #ffffff;
+}
+
+.banner-row{
+	margin-top:0px;
+}
+
+.top-banner{
+	display:block;
+	background-color: #212121;
+	color:#21a1cf;
+	width: 350px;
+	height: 60px;
+	text-align: center;
+}
+
+.name-banner{
+	margin-left: -15px;
+	float:left;
+	padding-top:10px;
+	padding-bottom: 10px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.social-banner{
+	margin-right: -15px;
+	float: right;
+	font-size: 40px;
+}
+
+.menu-banner{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	height: auto;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+.menu-banner span{
+	position: relative;
+	top:-15px;
+}
+
+.menu-banner span:hover{
+	opacity: 0.8;
+}
+
+.horizontal-line{
+	display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #c3c2c2;
+    margin: 6px 0;
+}
+
+.mobile-nav{
+	list-style: none;
+}
+
+.mobile-nav li a{
+	text-decoration: none;
+}
+
+.mobile-nav li a:hover{
+	text-decoration: none;
+}
+
+.menu-banner-inner:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.social-banner a{
+	color:inherit;
+	text-decoration: none;
+	margin-right: 15px;
+}
+
+.social-banner a:last-child{
+	margin-right: 0px;
+}
+
+.side-nav{
+	margin-top:15px;
+}
+
+.side-nav .menu-item-inner{
+	width: 100%;
+	height: 180px;
+	display: block;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.side-nav .menu-image{
+	width:100%;
+	max-width: 225px;
+	display: block;
+	margin:0 auto;
+	position: relative;
+}
+
+.side-nav .menu-image img{
+	position: absolute;
+	top:0;
+	width:100%;
+	height: auto;
+}
+
+.side-nav .menu-item h4{
+	text-align: center;
+	font-weight: normal;
+	font-size: 22px;
+}
+
+.side-nav .menu-item a{
+	text-decoration: none !important;
+	font-weight: inherit;
+	color:inherit;
+}
+
+.side-nav .circle-image{
+	transition: all 0.3s;
+}
+
+.side-nav .inactive{
+	opacity: 0.5;
+	transition: all 0.2s;
+}
+
+.side-nav .inactive:hover{
+	opacity: 1;
+}
+
+.sticky-side-navigation{
+	position: fixed;
+	top:25px;
+}
+
+/*Homepage 
+*******************/
+
+.home-nav{
+	margin-top:160px;
+}
+
+.home-nav .menu-item-inner{
+	width: 100%;
+	height: 180px;
+	display: block;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.home-nav .menu-image{
+	width:100%;
+	max-width: 225px;
+	display: block;
+	margin:0 auto;
+	position: relative;
+}
+
+.home-nav .menu-image img{
+	position: absolute;
+	top:0;
+	width:100%;
+	height: auto;
+}
+
+.home-nav .menu-item h1{
+	text-align: center;
+	font-weight: normal;
+	font-size: 32px;
+}
+
+.home-nav .menu-item a{
+	text-decoration: none !important;
+	font-weight: inherit;
+	color:inherit;
+}
+
+.home-nav .circle-image{
+	transition: all 0.3s;
+}
+
+/* Connect Page
+*********************/
+#contact-form input[type="text"]{
+	border:none;
+	background: #212121;
+	padding:10px;
+	font-weight: bold;
+	color:#21a1cf;
+	margin-bottom: 20px;
+	width: 45%;
+}
+
+#contact-form textarea{
+	border:none;
+	background: #212121;
+	padding:10px;
+	font-weight: bold;
+	color:#21a1cf;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 160px;
+}
+
+#contact-form input[type="text"]::-webkit-input-placeholder, #contact-form textarea::-webkit-input-placeholder {
+color: #21a1cf !important;
+opacity: 0.7;
+}
+ 
+#contact-form input[type="text"]:-moz-placeholder, #contact-form textarea:-moz-placeholder { /* Firefox 18- */
+color: #21a1cf !important; 
+opacity: 0.7;
+}
+ 
+#contact-form input[type="text"]::-moz-placeholder, #contact-form textarea::-moz-placeholder {  /* Firefox 19+ */
+color: #21a1cf !important; 
+opacity: 0.7; 
+}
+ 
+#contact-form input[type="text"]:-ms-input-placeholder, #contact-form textarea:-ms-input-placeholder {  
+color: #21a1cf !important;  
+opacity: 0.7;
+}
+
+#contact-form input[type="submit"]{
+	border:0;
+	padding: 10px 25px;
+	background: #212121;
+	color:#21a1cf;
+	font-weight: bold;
+}
+
+#contact-form input[type="text"].error,
+#contact-form input[type="email"].error,
+#contact-form textarea.error {
+  background: #212121;
+  border: 2px solid #cc0000 !important;
+}
+
+/* About Page
+*****************/
+
+.work-title{
+	font-weight: bold;
+	margin-bottom:0;
+	margin-top:8px;
+	color:#212121;
+}
+
+.work-place{
+	margin-top: 0;
+}
+
+.work-place a{
+	color:#212121;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: 1px dashed #212121;
+}
+
+.skills-images img{
+	width: 60px;
+	height: auto;
+	display: inline-block;
+	margin-right:12px;
+	margin-bottom: 20px;
+}
+
+/*Projects Page
+******************/
+
+.project-categories{
+	margin-bottom: 20px;
+}
+
+.project-categories h1{
+	margin-bottom: 20px;
+}
+
+.project-categories a{
+	background: #212121;
+	color:#21a1cf;
+	padding:10px 15px;
+	display: inline-block;
+	font-weight: 600;
+	width: auto;
+	height: auto;
+	margin-right: 5px;
+	margin-bottom: 15px;
+	opacity: 0.5;
+	transition: all ease-in-out 0.3s
+}
+
+.project-categories a:hover, .project-categories a:active, .project-categories a:focus, .project-categories a:visited {
+	text-decoration: none;
+	opacity: 1;
+}
+
+.project-categories .active{
+	opacity: 1;
+}
+
+.project-listing:hover .hover-item{
+	opacity: 0.9;
+}
+
+.project-listing{
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.project-listing .hover-item{
+	background: #212121;
+	color:#ffffff;
+	opacity: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	position: absolute;
+	top:0;
+	transition: all ease-in-out 0.3s;
+	text-align:center;
+	overflow: hidden;
+}
+
+.project-listing .hover-item span{
+	display: block;
+	font-weight: bold;
+}
+
+/* Responsive Utilities
+***************************/
+@media (max-width: 767px){
+	/*Handling for Extra Small Screen Devices */
+	.name-banner, .social-banner{
+		float:none;
+		margin:0 auto;
+		margin-bottom: 0px;
+		width: 100%;
+	}
+
+	.banner-row{
+		margin-top:0px;
+	}
+
+	.home-nav{
+		margin-top:20px;
+	}
+
+}
+
+@media (max-width: 991px){
+	/*Handling for Extra Small and Small Screen Devices */
+	.home-nav .menu-item{
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 1199px){
+	/*Handling for Extra Small, Small and Medium Screen Devices */
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	/*Handling for Small Screen Devices only */
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	/*Handling for Medium Screen Devices only */
+
+}
+
+@media (min-width: 1200px){
+	/*Handling for Large Screen Devices only */
+
+}
